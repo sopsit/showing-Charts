@@ -1,22 +1,9 @@
 
 
-<div>
-  <label>First Name:
-    <input [(ngModel)]="userName.firstName" (ngModelChange)="onNameChange()" />
-  </label>
-</div>
-
-<div>
-  <label>Last Name:
-    <input [(ngModel)]="userName.lastName" (ngModelChange)="onNameChange()" />
-  </label>
-</div>
-
-<p>Current Name: {{ userName.firstName }} {{ userName.lastName }}</p>
-
-<div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;">
-  <div *ngFor="let chart of charts; index as i" style="border: 1px solid #ccc; padding: 12px; border-radius: 8px;">
-    <app-charts [chartOptions]="chart"></app-charts>
-  </div>
-</div>
-
+<iframe
+  #homeFrame
+  src="http://localhost:45613"
+  width="100%"
+  height="800"
+  style="border: none;"
+></iframe>

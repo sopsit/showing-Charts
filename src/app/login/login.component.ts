@@ -39,6 +39,7 @@ export class LoginComponent {
           email: res.email
         };
         this.auth.loginWithFakeJson(user)
+        this.auth.setUser(user)
         this.router.navigate(['/home']);
       },
       error: (err) => {
@@ -46,7 +47,9 @@ export class LoginComponent {
         // console.error(err);
       }
     });
-  } 
+  }
+
+   
 }
   
  

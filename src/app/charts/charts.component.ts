@@ -27,7 +27,6 @@ export class ChartsComponent {
     }
   }
 
-
   naturalCompare(a: string, b: string): number {
     return a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' });
   }
@@ -53,10 +52,7 @@ export class ChartsComponent {
       ...this.LastChange,
       series: sortedSeries
     };
-    // this.chartOptions = {
-    //   ...this.LastChange,
-    //   series: sortedSeries
-    // };
+
   }
 
   changeType(type: string) {
@@ -80,10 +76,7 @@ export class ChartsComponent {
       ...this.LastChange,
       series: updatedSeries
     };
-    // this.chartOptions = {
-    //   ...this.LastChange,
-    //   series: updatedSeries
-    // };
+
   }
 }
 

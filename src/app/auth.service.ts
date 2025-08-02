@@ -36,7 +36,9 @@ export class Auth {
   logout() {
     localStorage.removeItem('token')
   }
-
+  setUser(usr: User) {
+    localStorage.setItem('user', JSON.stringify(usr))
+  }
   
   generateFakeToken(userData: User) : string {
     const base64UrlEncode = (obj: any) =>
