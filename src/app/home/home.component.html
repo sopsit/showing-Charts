@@ -1,1 +1,7 @@
-<p>home works!</p>
+
+<p>hello</p>
+<div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;">
+  <div *ngFor="let chart of charts; index as i" style="border: 1px solid #ccc; padding: 12px; border-radius: 8px;">
+    <app-charts [chartOptions]="chart"></app-charts>
+  </div>
+</div>
