@@ -1,0 +1,12 @@
+
+.navbar {
+    width:100dvw;
+    height: 400px;
+    position: fixed;
+    background-color: cadetblue;
+}
+.form {
+    width: 100px;
+    height: 200px;
+    background-color: antiquewhite;
+}

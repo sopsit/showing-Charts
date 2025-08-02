@@ -1,0 +1,23 @@
+<!-- charts.component.html -->
+
+<div style="margin-bottom: 8px;">
+  <label>Sort by:
+    <select [(ngModel)]="selectedSort" (change)="changeSort(selectedSort)">
+      <option value="default">Default</option>
+      <option value="alpha">Alphabet</option>
+    </select>
+  </label>
+
+  <label>Chart Type:
+    <select [(ngModel)]="selectedType" (change)="changeType(selectedType)">
+      <option value="line">Line</option>
+      <option value="area">Area</option>
+    </select>
+  </label>
+</div>
+
+<highcharts-chart
+  [Highcharts]="Highcharts"
+  [options]="LastChange"
+  style="width: 100%; height: 400px; display: block;">
+</highcharts-chart>
